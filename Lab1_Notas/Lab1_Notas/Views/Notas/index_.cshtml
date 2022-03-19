@@ -1,0 +1,27 @@
+﻿@model Lab1_Notas.Models.Acciones
+
+
+
+
+<h1 class="titulo" >Banco nacional Online</h1>
+
+<div class="color">
+<form asp-controller="Notas" asp-action="index_"> 
+    <div class="card"> 
+
+ <label>Digite la cantidad de dinero que desea retirar</label>
+ <input type="number"  asp-for="monto" placeholder="Cantidad en dolares, solo multiplos de 5"  class="form-control"/>
+
+
+  
+
+<button  class="btn btn-success">Retirar dinero</button>
+<label> Dolares retirados:</label>
+<textarea class="area" disabled=disabled>@ViewBag.variableaenviar</textarea>
+<textarea class="area" disabled=disabled>@ViewBag.mensaje</textarea>
+
+
+</div>
+</form>
+
+</div>
